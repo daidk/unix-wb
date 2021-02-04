@@ -18,7 +18,6 @@ function guess_file_number_func(){
 	break;
 	done
 }
-echo "guess the number of files in the current directory!"
     
 guess_file_number_func
 

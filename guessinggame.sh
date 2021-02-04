@@ -7,6 +7,7 @@ function guess_file_number_func(){
 	do
 		echo "Please guess how many files are in the current directory"
 		read  guess_file_number
+		echo "You entered: $guess_file_number"
 		if [ $guess_file_number -eq $correct_file_number ]
 		then
 			echo "Yayy! You have correctly guessed the number of files"

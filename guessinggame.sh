@@ -9,8 +9,8 @@ function guess_file_number_func(){
 		read  guess_file_number
 		echo "You entered: $guess_file_number"
 
-		re='^[0-9]+$'
-		if ! [[ $guess_file_number =~ $re ]] 
+		integ='^[0-9]+$'
+		if ! [[ $guess_file_number =~ $integ ]] 
 		then
 			echo "error: Please enter an integer, without decimals" >&2 
 			exit 1

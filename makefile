@@ -6,7 +6,6 @@ README.md: guessinggame.sh
 	echo "The title of the program is: Guessing Game - Bash, Make, Git, and GitHub \n" > README.md
 	echo "The date and time at which make was run:" >> README.md
 	date >> README.MD
-	echo "\n"
 	echo "The number of lines of code contained in guessinggam is \n:" >> README.md
 	cat guessinggame.sh | wc -l >> README.md
 

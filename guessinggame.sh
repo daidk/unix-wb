@@ -8,6 +8,14 @@ function guess_file_number_func(){
 		echo "Please guess how many files are in the current directory"
 		read  guess_file_number
 		echo "You entered: $guess_file_number"
+
+		re='^[0-9]+$'
+		if ! [[ $guess_file_number =~ $re ]] 
+		then
+			echo "error: Please enter an integer, without decimals" >&2 
+			exit 1
+		fi
+
 		if [ $guess_file_number -eq $correct_file_number ]
 		then
 			echo "Yayy! You have correctly guessed the number of files"
